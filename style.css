@@ -1,0 +1,66 @@
+/* ============== Google Fonts =============== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ============== Variables CSS =============== */
+:root{
+    --header-height: 6rem;
+    
+    /* ============== Colors =============== */
+    /* Color mode HSL(hue, saturation, lightness) */
+    --first-color: hsl(350, 98%, 64%);
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 77%);
+    --body-color: hsl(0, 0%, 6%);
+    --container-color: hsl(0, 0%, 10%);
+    --border-color: hsl(0, 0%, 100%, 0.2);
+    
+    
+    /* ============== Font and typography =============== */
+    /* .5rem = 8px | 1rem = 16px ... */
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Montserrat", sans-serif;
+    
+    --big-font-size: 4.5rem;
+    --h1-font-size: 3.75rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+    
+    /* ============== Font Weight =============== */
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-900: 900;
+
+/* ============== Transition =============== */
+--transition: cubic-bezier(0.05, 0.2, 0.1, 1);
+/* ============== Border Radius =============== */
+--radius: 0.5rem;
+/* ============== z index =============== */
+--z-tooltip: 10;
+--z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 992px){
+    :root {
+        --h2-font-size: ;
+        --h3-font-size: ;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
+    }   
+}
+/* ============== BASE =============== */
+
+/* ============== Reusable CSS Classes =============== */
+/* ============== HEADER & NAV =============== */
+/* Active link */
+/* Change Background Header */
+/* ============== HOME =============== */
+/* ============== ABOUT =============== */
+/* Active Tab */

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ============== Variables CSS =============== */
-:root{
+:root {
     --header-height: 6rem;
     
     /* ============== Colors =============== */
@@ -46,7 +46,7 @@
 }
 
 /* Responsive typography */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     :root {
         --h2-font-size: ;
         --h3-font-size: ;
@@ -56,7 +56,54 @@
     }   
 }
 /* ============== BASE =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+input,
+textarea,
+body {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-300);
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--weight-700);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.67rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea,
+input {
+    background-color: none;
+    border: none;
+    outline: none;
+}
 /* ============== Reusable CSS Classes =============== */
 /* ============== HEADER & NAV =============== */
 /* Active link */

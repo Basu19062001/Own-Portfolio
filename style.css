@@ -212,6 +212,7 @@ input {
     width: 30%;
     height: 2px;
     background-color: var(--text-color);
+    transition: all 0.5s var(--transition);
 }
 
 .tabs__data {

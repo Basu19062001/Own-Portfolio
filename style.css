@@ -4,7 +4,7 @@
 /* ============== Variables CSS =============== */
 :root {
     --header-height: 6rem;
-    
+
     /* ============== Colors =============== */
     /* Color mode HSL(hue, saturation, lightness) */
     --first-color: hsl(350, 98%, 64%);
@@ -13,13 +13,13 @@
     --body-color: hsl(0, 0%, 6%);
     --container-color: hsl(0, 0%, 10%);
     --border-color: hsl(0, 0%, 100%, 0.2);
-    
-    
+
+
     /* ============== Font and typography =============== */
     /* .5rem = 8px | 1rem = 16px ... */
     --body-font: "Poppins", sans-serif;
     --second-font: "Montserrat", sans-serif;
-    
+
     --big-font-size: 4.5rem;
     --h1-font-size: 3.75rem;
     --h2-font-size: 1.75rem;
@@ -27,7 +27,7 @@
     --normal-font-size: 1.125rem;
     --small-font-size: 1rem;
     --smaller-font-size: 0.875rem;
-    
+
     /* ============== Font Weight =============== */
     --weight-300: 300;
     --weight-400: 400;
@@ -36,13 +36,13 @@
     --weight-700: 700;
     --weight-900: 900;
 
-/* ============== Transition =============== */
---transition: cubic-bezier(0.05, 0.2, 0.1, 1);
-/* ============== Border Radius =============== */
---radius: 0.5rem;
-/* ============== z index =============== */
---z-tooltip: 10;
---z-fixed: 100;
+    /* ============== Transition =============== */
+    --transition: cubic-bezier(0.05, 0.2, 0.1, 1);
+    /* ============== Border Radius =============== */
+    --radius: 0.5rem;
+    /* ============== z index =============== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
 
 /* Responsive typography */
@@ -53,8 +53,9 @@
         --normal-font-size: ;
         --small-font-size: ;
         --smaller-font-size: ;
-    }   
+    }
 }
+
 /* ============== BASE =============== */
 * {
     margin: 0;
@@ -104,6 +105,7 @@ input {
     border: none;
     outline: none;
 }
+
 /* ============== Reusable CSS Classes =============== */
 .container {
     max-width: 1260px;
@@ -115,6 +117,16 @@ input {
     display: grid;
     gap: 1.75rem;
 }
+
+.section {
+    padding-block: 8rem;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+
 /* ============== HEADER & NAV =============== */
 /* Active link */
 /* Change Background Header */
@@ -155,6 +167,74 @@ input {
 }
 
 /* ============== ABOUT =============== */
+
+.about {
+    background-color: var(--container-color);
+}
+
+.about__container {
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img {
+    border-radius: var(--radius);
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
+
+.tabs__btns {
+    display: flex;
+    column-gap: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tabs__btn,
+.tabs__description span:first-child {
+    font-weight: var(--weight-500);
+}
+
+.tabs__btn {
+    cursor: pointer;
+    color: var(--title-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.tabs__btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.tabs__data {
+    row-gap: 1rem;
+}
+
+.tabs__description span:last-child {
+    display: block;
+}
+
+.tabs__btn.tab__active::after {
+    background-color: var(--first-color);
+    width: 100%;
+}
+
+.tabs__item[data-content] {
+    display: none;
+}
+
+.tab__active[data-content] {
+    display: block;
+}
+
 /* Active Tab */
 /* ============== SERVICES =============== */
 /* ============== WORK =============== */

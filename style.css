@@ -127,6 +127,17 @@ input {
     margin-bottom: 1rem;
 }
 
+.section__title:not(.about .section__title),
+.section__description {
+    text-align: center;
+}
+
+.section__description {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 3.75rem;
+}
+
 /* ============== HEADER & NAV =============== */
 /* Active link */
 /* Change Background Header */
@@ -223,6 +234,11 @@ input {
     display: block;
 }
 
+/* Active Tab */
+
+.tabs__btn.tab__active {
+    color: var(--first-color);
+}
 .tabs__btn.tab__active::after {
     background-color: var(--first-color);
     width: 100%;
@@ -235,9 +251,32 @@ input {
 .tab__active[data-content] {
     display: block;
 }
-
-/* Active Tab */
 /* ============== SERVICES =============== */
+.services__container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services__item {
+    background-color: var(--container-color);
+    padding: 3.5rem 2.5rem;
+    border-radius: var(--radius);
+}
+
+.services__icon {
+    color: var(--first-color);
+    font-size: 3.25rem;
+    line-height: 1;
+}
+
+.services__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-500);
+    margin-block: 1.75rem 1.25rem;
+}
+
+.services__description {
+    font-weight: var(--weight-400);
+}
 /* ============== WORK =============== */
 /* Work hover */
 /* ============== CONTACT =============== */

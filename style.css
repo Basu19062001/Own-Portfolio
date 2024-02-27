@@ -432,6 +432,10 @@ input {
     height: 85%;
     margin-left: auto;
 }
+
+.color-first {
+    color: var(--first-color);
+}
 /* ============== FOOTER =============== */
 /* ============== SCROLL UP =============== */
 /* Show scrollup */

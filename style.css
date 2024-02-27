@@ -63,6 +63,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 input,
 textarea,
 body {
@@ -238,6 +242,26 @@ input {
 }
 
 /* Change Background Header */
+.scroll-header {
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scroll-header .nav {
+    height: var(--header-height);
+}
+
 /* ============== HOME =============== */
 .home {
     padding-block: 16rem 9rem;

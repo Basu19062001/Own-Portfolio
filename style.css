@@ -878,8 +878,9 @@ input {
         margin-left: auto;
     }
     .nav__toggle {
-        margin-right: 1.25rem;
-        margin-right: auto;
+        position: relative;
+        margin-top: 0.25rem;
+        /* visibility: visible; */
     }
     
 }

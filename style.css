@@ -868,6 +868,21 @@ input {
     } */
 }
 /* For small devices */
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 340px;
+    }
+
+    .nav__logo {
+        font-size: 20px;
+        margin-left: auto;
+    }
+    .nav__toggle {
+        margin-right: 1.25rem;
+        margin-right: auto;
+    }
+    
+}
 @media screen and (max-width: 350px) {
     .container {
         max-width: 340px;

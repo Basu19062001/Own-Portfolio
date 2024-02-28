@@ -877,11 +877,6 @@ input {
         font-size: 20px;
         margin-left: auto;
     }
-    .nav__toggle {
-        position: relative;
-        margin-top: 0.25rem;
-        /* visibility: visible; */
-    }
     
 }
 @media screen and (max-width: 350px) {
